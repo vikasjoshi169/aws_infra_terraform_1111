@@ -48,10 +48,16 @@ pipeline {
 				}
 			}
 		}
-		stage('Terraform Apply') {
+		/*stage('Terraform Apply') {
 			steps {
 					echo 'Terraform Apply'
 					sh 'terraform apply --auto-approve'
+			}
+		}*/
+		stage('Terraform Destroy') {
+			steps {
+					echo 'Terraform Destroy'
+					sh 'terraform destroy --auto-approve'
 			}
 		}
 	}
