@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket = "aws-infra-terraform-1111-bucket"
-    key="terraform.tfstate"
+    key    = "terraform.tfstate"
     region = "ap-south-1"
   }
 
